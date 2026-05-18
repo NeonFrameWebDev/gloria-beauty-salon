@@ -44,7 +44,7 @@
       if (!ticking) {
         requestAnimationFrame(() => {
           const scrollY = window.scrollY;
-          heroImg.style.transform = `translateY(${scrollY * 0.3}px)`;
+          heroImg.style.transform = `translateY(${scrollY * 0.12}px)`;
           ticking = false;
         });
         ticking = true;

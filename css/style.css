@@ -349,7 +349,7 @@ nav.site-nav.nav-scrolled {
 
 .hero-img-wrapper {
   position: absolute;
-  inset: -15%;
+  inset: -3%;
   z-index: 0;
 }
 
@@ -737,9 +737,17 @@ nav.site-nav.nav-scrolled {
 
 .gallery-tile img {
   width: 100%;
-  height: auto;
+  height: 220px;
   display: block;
+  object-fit: contain;
+  background: var(--surface);
   transition: transform 0.3s ease;
+}
+
+@media (min-width: 769px) {
+  .gallery-tile img {
+    height: 260px;
+  }
 }
 
 .gallery-tile-overlay {

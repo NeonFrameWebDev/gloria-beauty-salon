@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>Sala de Belleza Gloria | Desde 1969, Puerto Pe&#241;asco, Sonora</title>
+  <meta name="description" content="60 a&#241;os cuidando la belleza de Puerto Pe&#241;asco. Cortes, color, balayage, u&#241;as, faciales y eventos especiales. Instituto Profesional de Belleza Gloria. Llame al 638 383 5075." />
+
+  <!-- Open Graph (og:url uses hyphens; og:image is absolute URL) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://neonframewebdev.github.io/gloria-beauty-salon/" />
+  <meta property="og:title" content="Sala de Belleza Gloria | Puerto Pe&#241;asco, Sonora" />
+  <meta property="og:description" content="60 a&#241;os en el coraz&#243;n de Puerto Pe&#241;asco. Familia, escuela y comunidad desde 1969. El sal&#243;n mejor calificado de Rocky Point." />
+  <meta property="og:image" content="https://neonframewebdev.github.io/gloria-beauty-salon/assets/staff_1.png" />
+  <meta property="og:locale" content="es_MX" />
+  <meta property="og:locale:alternate" content="en_US" />
+
+  <!-- Twitter Card (absolute URLs) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sala de Belleza Gloria | Puerto Pe&#241;asco, Sonora" />
+  <meta name="twitter:description" content="60 a&#241;os cuidando la belleza de Puerto Pe&#241;asco. Familia, escuela y comunidad desde 1969." />
+  <meta name="twitter:image" content="https://neonframewebdev.github.io/gloria-beauty-salon/assets/staff_1.png" />
+
+  <!-- Favicon (logo_ig_profile.jpg as closest available) -->
+  <link rel="icon" type="image/jpeg" href="assets/logo_ig_profile.jpg" />
+
+  <!-- Fonts: Cormorant Garamond + Manrope -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Preload hero -->
+  <link rel="preload" as="image" href="assets/staff_1.png" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ======================================================= -->
+  <!-- Loader                                                   -->
+  <!-- ======================================================= -->
+  <div id="loader" role="status" aria-label="Cargando / Loading">
+    <div class="loader-wordmark">GLORIA</div>
+    <div class="loader-sub">Sala de Belleza</div>
+    <div class="loader-bar-track" aria-hidden="true">
+      <div class="loader-bar-fill"></div>
+    </div>
+  </div>
+
+  <!-- ======================================================= -->
+  <!-- Nav                                                      -->
+  <!-- ======================================================= -->
+  <nav class="site-nav" role="navigation" aria-label="Navegaci&#243;n principal">
+    <a href="#hero" class="nav-logo" aria-label="Sala de Belleza Gloria &#8211; inicio">
+      <span class="nav-logo-name">GLORIA</span>
+      <span class="nav-logo-sub">Sal&#243;n de Belleza</span>
+    </a>
+
+    <div class="nav-right">
+      <!-- Desktop nav links -->
+      <ul class="nav-links" role="list">
+        <li>
+          <a href="#servicios"
+             data-es="Servicios"
+             data-en="Services">Servicios</a>
+        </li>
+        <li>
+          <a href="#gloria"
+             data-es="Nosotros"
+             data-en="About">Nosotros</a>
+        </li>
+        <li>
+          <a href="#galeria"
+             data-es="Galer&#237;a"
+             data-en="Gallery">Galer&#237;a</a>
+        </li>
+        <li>
+          <a href="#contacto"
+             data-es="Contacto"
+             data-en="Contact">Contacto</a>
+        </li>
+      </ul>
+
+      <!-- Language toggle -->
+      <button type="button" class="lang-toggle" data-current="es"
+              aria-label="Switch to English">
+        <span class="lt-flag">&#127482;&#127480;</span>
+        <span class="lt-label">EN</span>
+      </button>
+
+      <!-- Desktop CTA -->
+      <a href="tel:6383835075" class="nav-cta"
+         data-es="Pida su cita"
+         data-en="Book appointment">Pida su cita</a>
+
+      <!-- Hamburger (mobile) -->
+      <button class="nav-hamburger" aria-label="Abrir men&#250;" aria-expanded="false" aria-controls="nav-drawer">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <nav id="nav-drawer" aria-label="Men&#250; m&#243;vil">
+    <a href="#servicios"
+       data-es="Servicios"
+       data-en="Services">Servicios</a>
+    <a href="#gloria"
+       data-es="Nosotros"
+       data-en="About">Nosotros</a>
+    <a href="#galeria"
+       data-es="Galer&#237;a"
+       data-en="Gallery">Galer&#237;a</a>
+    <a href="#contacto"
+       data-es="Contacto"
+       data-en="Contact">Contacto</a>
+    <div class="drawer-lang">
+      <button type="button" class="lang-toggle" data-current="es"
+              aria-label="Switch to English">
+        <span class="lt-flag">&#127482;&#127480;</span>
+        <span class="lt-label">EN</span>
+      </button>
+    </div>
+    <a href="tel:6383835075" class="drawer-cta"
+       data-es="Pida su cita"
+       data-en="Book appointment">Pida su cita</a>
+  </nav>
+
+  <!-- ======================================================= -->
+  <!-- Hero                                                     -->
+  <!-- ======================================================= -->
+  <section id="hero" aria-label="Hero">
+    <div class="hero-img-wrapper" aria-hidden="true">
+      <img
+        class="hero-img-parallax"
+        src="assets/staff_1.png"
+        alt="El equipo de Sala de Belleza Gloria en la pared teal del sal&#243;n"
+        fetchpriority="high"
+        decoding="async"
+      />
+    </div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <h1 class="hero-h1"
+          data-es="60 a&#241;os haciendo que Puerto Pe&#241;asco se vea hermoso."
+          data-en="60 years making Puerto Pe&#241;asco look its best.">
+        60 a&#241;os haciendo que Puerto Pe&#241;asco se vea hermoso.
+      </h1>
+
+      <p class="hero-sub"
+         data-es="Familia, escuela y comunidad. Desde 1969, Gloria Cabrera Ortiz y su familia la reciben con el mismo cuidado de siempre."
+         data-en="Family, school, and community. Since 1969, Gloria Cabrera Ortiz and her family welcome you with the same care they always have.">
+        Familia, escuela y comunidad. Desde 1969, Gloria Cabrera Ortiz y su familia la reciben con el mismo cuidado de siempre.
+      </p>
+
+      <div class="hero-rule" aria-hidden="true"></div>
+
+      <div class="hero-ctas">
+        <a href="#servicios" class="btn-primary"
+           data-es="Pida su cita"
+           data-en="Book your appointment">Pida su cita</a>
+        <a href="tel:6383835075" class="btn-ghost"
+           data-es="Ll&#225;menos"
+           data-en="Call us">Ll&#225;menos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================= -->
+  <!-- Trust Bar                                                -->
+  <!-- ======================================================= -->
+  <div id="trust-bar" role="complementary" aria-label="Reconocimientos">
+    <div class="trust-inner">
+      <div class="trust-item"
+           data-es="Desde 1969"
+           data-en="Since 1969">Desde 1969</div>
+
+      <div class="trust-sep-h" aria-hidden="true"></div>
+      <span class="trust-sep" aria-hidden="true">|</span>
+
+      <div class="trust-item"
+           data-es="4.5 estrellas &#8211; 120 rese&#241;as Google"
+           data-en="4.5 stars &#8211; 120 Google reviews">4.5 estrellas &#8211; 120 rese&#241;as Google</div>
+
+      <div class="trust-sep-h" aria-hidden="true"></div>
+      <span class="trust-sep" aria-hidden="true">|</span>
+
+      <div class="trust-item"
+           data-es="La escuela de belleza de Puerto Pe&#241;asco"
+           data-en="Rocky Point's Beauty School">La escuela de belleza de Puerto Pe&#241;asco</div>
+    </div>
+  </div>
+
+  <!-- ======================================================= -->
+  <!-- Conoce a Gloria / About                                  -->
+  <!-- ======================================================= -->
+  <section id="gloria" aria-labelledby="gloria-title">
+    <div class="section-inner section-pad">
+
+      <div class="gloria-grid">
+        <!-- Left: text -->
+        <div class="gloria-text">
+          <p class="section-eyebrow reveal"
+             data-es="Fundadora y Estilista Principal"
+             data-en="Founder &amp; Lead Stylist">Fundadora y Estilista Principal</p>
+
+          <h2 class="section-title reveal reveal-delay-1" id="gloria-title">
+            <span data-es="La historia de <span style='color:#7B3FA0'>Gloria</span>"
+                  data-en="The story of <span style='color:#7B3FA0'>Gloria</span>">La historia de <span style="color:#7B3FA0">Gloria</span></span>
+          </h2>
+
+          <p class="gloria-body reveal reveal-delay-2"
+             data-es="Gloria Cabrera Ortiz abri&#243; la Sala de Belleza Gloria en 1969, cuando Puerto Pe&#241;asco todav&#237;a no ten&#237;a calles pavimentadas. Lleg&#243; a esta ciudad a los nueve a&#241;os, aprendi&#243; el oficio desde cero y construy&#243; el sal&#243;n de belleza m&#225;s reconocido de la regi&#243;n. Desde entonces, no ha parado."
+             data-en="Gloria Cabrera Ortiz opened Sala de Belleza Gloria in 1969, when Puerto Pe&#241;asco still didn't have paved streets. She arrived in this city at age nine, learned the trade from the ground up, and built the most respected salon in the area. She hasn't stopped since.">
+            Gloria Cabrera Ortiz abri&#243; la Sala de Belleza Gloria en 1969, cuando Puerto Pe&#241;asco todav&#237;a no ten&#237;a calles pavimentadas. Lleg&#243; a esta ciudad a los nueve a&#241;os, aprendi&#243; el oficio desde cero y construy&#243; el sal&#243;n de belleza m&#225;s reconocido de la regi&#243;n. Desde entonces, no ha parado.
+          </p>
+
+          <p class="gloria-body reveal reveal-delay-2"
+             data-es="El negocio siempre ha sido de familia. Su esposo y su hijo manejan los suministros y las citas. Su hija corta cabello y aplica maquillaje permanente. Gloria atiende clientes ella misma. As&#237; ha sido desde el primer d&#237;a, y as&#237; sigue."
+             data-en="The business has always been family. Her husband and son handle supplies and appointments. Her daughter cuts hair and applies permanent makeup. Gloria takes clients herself. That's how it's been since day one.">
+            El negocio siempre ha sido de familia. Su esposo y su hijo manejan los suministros y las citas. Su hija corta cabello y aplica maquillaje permanente. Gloria atiende clientes ella misma. As&#237; ha sido desde el primer d&#237;a, y as&#237; sigue.
+          </p>
+
+          <p class="gloria-body reveal reveal-delay-2"
+             data-es="En 2002, Gloria fund&#243; el Instituto Profesional de Belleza Gloria. Ocho generaciones de estilistas locales se graduaron ah&#237;, la mayor&#237;a de ellos formados dentro de estas mismas paredes. En marzo de 2026, un grupo numeroso de esos estilistas se reuni&#243; para rendirle homenaje por sus 60 a&#241;os dedicados a la belleza. Ese reconocimiento no lo otorgan las revistas. Lo otorga la comunidad."
+             data-en="In 2002, Gloria founded the Instituto Profesional de Belleza Gloria. Eight graduating cohorts of local stylists trained there, most of them formed inside these same walls. In March 2026, a large gathering of those stylists came together to honor her publicly for 60 years in the beauty profession. That kind of recognition doesn't come from a magazine. It comes from a community.">
+            En 2002, Gloria fund&#243; el <em>Instituto Profesional de Belleza Gloria</em>. Ocho generaciones de estilistas locales se graduaron ah&#237;, la mayor&#237;a de ellos formados dentro de estas mismas paredes. En marzo de 2026, un grupo numeroso de esos estilistas se reuni&#243; para rendirle homenaje por sus 60 a&#241;os dedicados a la belleza. Ese reconocimiento no lo otorgan las revistas. Lo otorga la comunidad.
+          </p>
+
+          <blockquote class="gloria-pullquote reveal reveal-delay-3"
+             data-es="&#8220;60 a&#241;os dedicada a la linda profesi&#243;n de la belleza.&#8221;"
+             data-en="&#8220;60 years devoted to the beautiful profession of beauty.&#8221;">
+            &#8220;60 a&#241;os dedicada a la linda profesi&#243;n de la belleza.&#8221;
+          </blockquote>
+          <div class="gloria-quote-rule reveal reveal-delay-3"></div>
+        </div>
+
+        <!-- Right: photo -->
+        <div class="gloria-photo-wrap reveal">
+          <img
+            class="gloria-photo"
+            src="assets/event_1.jpg"
+            alt="Gloria Cabrera Ortiz en la ceremonia de reconocimiento, marzo 2026"
+            loading="lazy"
+            decoding="async"
+          />
+          <p class="gloria-caption"
+             data-es="Gloria Cabrera Ortiz, reconocida por sus pares &#8211; Marzo 2026"
+             data-en="Gloria Cabrera Ortiz, honored by her peers &#8211; March 2026">
+            Gloria Cabrera Ortiz, reconocida por sus pares &#8211; Marzo 2026
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================= -->
+  <!-- Servicios / Services                                     -->
+  <!-- ======================================================= -->
+  <section id="servicios" aria-labelledby="servicios-title">
+    <div class="section-inner section-pad">
+
+      <div class="services-header">
+        <p class="section-eyebrow reveal"
+           data-es="Nuestros Servicios"
+           data-en="Our Services">Nuestros Servicios</p>
+        <h2 class="section-title reveal reveal-delay-1" id="servicios-title"
+            data-es="Todo lo que necesita, bajo un mismo techo."
+            data-en="Everything you need, under one roof.">
+          Todo lo que necesita, bajo un mismo techo.
+        </h2>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- Card 1: Cabello / Hair -->
+        <div class="service-card reveal">
+          <img class="service-card-img"
+               src="assets/service_2.jpg"
+               alt="Resultado de keratina &#8211; cabello liso y brillante, Sala de Belleza Gloria"
+               loading="lazy" decoding="async" />
+          <div class="service-card-body">
+            <h3 class="service-card-title"
+                data-es="Cabello / Hair"
+                data-en="Hair / Cabello">Cabello / Hair</h3>
+            <ul class="service-list">
+              <li class="service-item">
+                <span class="service-name"
+                      data-es="Corte de cabello"
+                      data-en="Haircut">Corte de cabello</span>
+                <span class="service-desc"
+                      data-es="Para dama, caballero y ni&#241;o. Con la atenci&#243;n al detalle que los distingue."
+                      data-en="For women, men, and children. With the attention to detail they're known for.">Para dama, caballero y ni&#241;o. Con la atenci&#243;n al detalle que los distingue.</span>
+              </li>
+              <li class="service-item">
+                <span class="service-name"
+                      data-es="Coloraci&#243;n / Tinte"
+                      data-en="Color / Tint">Coloraci&#243;n / Tinte</span>
+                <span class="service-desc"
+                      data-es="Color completo, retoque de ra&#237;z o cambio de tono."
+                      data-en="Full color, root touch-up, or a new tone altogether.">Color completo, retoque de ra&#237;z o cambio de tono.</span>
+              </li>
+              <li class="service-item">
+                <span class="service-name"
+                      data-es="Balayage (a mano alzada)"
+                      data-en="Balayage (freehand)">Balayage (a mano alzada)</span>
+                <span class="service-desc"
+                      data-es="La t&#233;cnica freehand que trabajan sus estilistas. Iluminaci&#243;n natural, sin l&#237;neas marcadas."
+                      data-en="The freehand technique their stylists specialize in. Natural-looking highlights, no hard lines.">La t&#233;cnica freehand que trabajan sus estilistas. Iluminaci&#243;n natural, sin l&#237;neas marcadas.</span>
+              </li>
+              <li class="service-item">
+                <span class="service-name"
+                      data-es="Mechas / Iluminaciones"
+                      data-en="Highlights / Mechas">Mechas / Iluminaciones</span>
+                <span class="service-desc"
+                      data-es="Desde mechas cl&#225;sicas hasta t&#233;cnicas de degradado."
+                      data-en="From classic highlights to gradient techniques.">Desde mechas cl&#225;sicas hasta t&#233;cnicas de degradado.</span>
+              </li>
+              <li class="service-item">
+                <span class="service-name"
+                      data-es="Keratina"
+                      data-en="Keratin Treatment">Keratina</span>
+                <span class="service-desc"
+                      data-es="Tratamiento alisador profesional. Cabello liso, brillante y manejable."
+                      data-en="Professional smoothing treatment. Straight, glossy, manageable hair.">Tratamiento alisador profesional. Cabello liso, brillante y manejable.</span>
+              </li>
+              <li class="service-item">
+                <span class="service-name"
+                      data-es="Brushing / Secado y peinado"
+                      data-en="Blowout / Brushing">Brushing / Secado y peinado</span>
+                <span class="service-desc"
+                      data-es="Para el d&#237;a a d&#237;a o para una ocasi&#243;n especial."
+                      data-en="For everyday or for a special occasion.">Para el d&#237;a a d&#237;a o para una ocasi&#243;n especial.</span>
+              </li>
+              <li class="service-item">
+                <span class="service-name"
+                      data-es="Extensiones"
+                      data-en="Extensions">Extensiones</span>
+              </li>
+              <li class="service-item">
+                <span class="service-name"
+                      data-es="Permanentes"
+                      data-en="Perms">Permanentes</span>
+                <span class="service-desc"
+                      data-es="Rizo duradero. Pregunte por las opciones disponibles."
+                      data-en="Lasting curl. Ask about the options available.">Rizo duradero. Pregunte por las opciones disponibles.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card 2: Belleza Completa / Full Beauty -->
+        <div class="service-card reveal reveal-delay-1">
+          <img class="service-card-img"
+               src="assets/service_3.jpg"
+               alt="Resultado de color y balayage, Sala de Belleza Gloria"
+               loading="lazy" decoding="async" />
+          <div class="service-card-body">
+            <h3 class="service-card-title"
+                data-es="Belleza Completa"
+                data-en="Full Beauty">Belleza Completa</h3>
+            <ul class="service-list">
+              <li class="service-item">
+                <span class="service-name"
+                      data-es="Manicure y Pedicure"
+                      data-en="Manicure and Pedicure">Manicure y Pedicure</span>
+                <span class="service-desc"
+                      data-es="Cl&#225;sico o con esmaltado semipermanente (gel)."
+                      data-en="Classic or with gel (semi-permanent polish).">Cl&#225;sico o con esmaltado semipermanente (gel).</span>
+              </li>
+              <li class="service-item">
+                <span class="service-name"
+                      data-es="U&#241;as acr&#237;licas"
+                      data-en="Acrylic Nails">U&#241;as acr&#237;licas</span>
+                <span class="service-desc"
+                      data-es="Con o sin dise&#241;o. Rellenos disponibles."
+                      data-en="With or without nail art. Fills available.">Con o sin dise&#241;o. Rellenos disponibles.</span>
+              </li>
+              <li class="service-item">
+                <span class="service-name"
+                      data-es="Gel semipermanente"
+                      data-en="Gel Polish">Gel semipermanente</span>
+                <span class="service-desc"
+                      data-es="Color duradero sin da&#241;o al natural."
+                      data-en="Long-lasting color without damage to the natural nail.">Color duradero sin da&#241;o al natural.</span>
+              </li>
+              <li class="service-item">
+                <span class="service-name"
+                      data-es="Faciales"
+                      data-en="Facials">Faciales</span>
+                <span class="service-desc"
+                      data-es="Limpieza e hidrataci&#243;n facial. Pregunte por el tratamiento indicado para su piel."
+                      data-en="Deep cleansing and hydration. Ask about the right treatment for your skin type.">Limpieza e hidrataci&#243;n facial. Pregunte por el tratamiento indicado para su piel.</span>
+              </li>
+              <li class="service-item">
+                <span class="service-name"
+                      data-es="Masaje corporal"
+                      data-en="Body Massage">Masaje corporal</span>
+              </li>
+              <li class="service-item">
+                <span class="service-name"
+                      data-es="Depilaci&#243;n / Cera"
+                      data-en="Waxing / Hair Removal">Depilaci&#243;n / Cera</span>
+                <span class="service-desc"
+                      data-es="Cejas, facial, piernas y m&#225;s. Pregunte en recepci&#243;n."
+                      data-en="Eyebrows, face, legs, and more. Ask at the front desk.">Cejas, facial, piernas y m&#225;s. Pregunte en recepci&#243;n.</span>
+              </li>
+              <li class="service-item">
+                <span class="service-name"
+                      data-es="Maquillaje permanente (cejas, ojos, labios)"
+                      data-en="Permanent Makeup (brows, eyes, lips)">Maquillaje permanente (cejas, ojos, labios)</span>
+                <span class="service-desc"
+                      data-es="Definici&#243;n duradera, aplicada por su hija, estilista del sal&#243;n."
+                      data-en="Lasting definition, applied by their in-house stylist.">Definici&#243;n duradera, aplicada por su hija, estilista del sal&#243;n.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card 3: Eventos / Occasions -->
+        <div class="service-card reveal reveal-delay-2">
+          <img class="service-card-img"
+               src="assets/event_2.jpg"
+               alt="Celebraci&#243;n en el sal&#243;n &#8211; equipo de Gloria Salon en evento especial"
+               loading="lazy" decoding="async" />
+          <div class="service-card-body">
+            <h3 class="service-card-title"
+                data-es="Eventos y Ocasiones"
+                data-en="Events &amp; Occasions">Eventos y Ocasiones</h3>
+            <p class="service-desc"
+               style="margin-bottom:0.9rem;"
+               data-es="Gloria y su equipo la acompa&#241;an en los momentos que m&#225;s importan. Llame con tiempo para coordinar su grupo."
+               data-en="Gloria and her team are with you for the moments that matter most. Call ahead to coordinate your group.">
+              Gloria y su equipo la acompa&#241;an en los momentos que m&#225;s importan. Llame con tiempo para coordinar su grupo.
+            </p>
+            <ul class="service-list">
+              <li class="service-item">
+                <span class="service-name"
+                      data-es="Bodas / Weddings"
+                      data-en="Weddings / Bodas">Bodas / Weddings</span>
+              </li>
+              <li class="service-item">
+                <span class="service-name"
+                      data-es="Quincea&#241;eras / XV a&#241;os"
+                      data-en="Quincea&#241;eras">Quincea&#241;eras / XV a&#241;os</span>
+              </li>
+              <li class="service-item">
+                <span class="service-name"
+                      data-es="Bautizos / Graduaciones"
+                      data-en="Baptisms / Graduations">Bautizos / Graduaciones</span>
+              </li>
+              <li class="service-item">
+                <span class="service-name"
+                      data-es="Grupos familiares"
+                      data-en="Family groups">Grupos familiares</span>
+              </li>
+              <li class="service-item">
+                <span class="service-name"
+                      data-es="Navidades / Fiestas"
+                      data-en="Holiday parties">Navidades / Fiestas</span>
+              </li>
+            </ul>
+            <div class="service-gold-rule"></div>
+            <p class="service-desc" style="margin-top:0.75rem;"
+               data-es="Tambi&#233;n en el sal&#243;n: l&#237;nea completa de Paul Mitchell, Sebastian y Tec Italy."
+               data-en="Also in-salon: full Paul Mitchell, Sebastian, and Tec Italy product lines.">
+              Tambi&#233;n en el sal&#243;n: l&#237;nea completa de Paul Mitchell, Sebastian y Tec Italy.
+            </p>
+          </div>
+        </div>
+
+      </div><!-- /.services-grid -->
+
+      <p class="services-note reveal"
+         data-es="No publicamos precios &#8211; visita el sal&#243;n o ll&#225;menos para m&#225;s informaci&#243;n."
+         data-en="We don't list prices online &#8211; visit us or call for more information.">
+        No publicamos precios &#8211; visita el sal&#243;n o ll&#225;menos para m&#225;s informaci&#243;n.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ======================================================= -->
+  <!-- Galeria / Gallery                                        -->
+  <!-- ======================================================= -->
+  <section id="galeria" aria-labelledby="galeria-title">
+    <div class="section-inner section-pad">
+
+      <p class="section-eyebrow reveal"
+         data-es="El Sal&#243;n"
+         data-en="The Salon">El Sal&#243;n</p>
+      <h2 class="section-title reveal reveal-delay-1" id="galeria-title"
+          data-es="Donde cada visita es una ocasi&#243;n."
+          data-en="Where every visit is an occasion.">
+        Donde cada visita es una ocasi&#243;n.
+      </h2>
+
+      <div class="gallery-grid">
+
+        <div class="gallery-tile reveal"
+             role="button" tabindex="0"
+             aria-label="Foto del sal&#243;n"
+             data-caption="Av. Constituci&#243;n, Centro, Puerto Pe&#241;asco">
+          <img src="assets/exterior_1.jpg"
+               alt="Fachada de Sala de Belleza Gloria, Av. Constituci&#243;n, Puerto Pe&#241;asco"
+               loading="lazy" decoding="async" />
+          <div class="gallery-tile-overlay" aria-hidden="true"></div>
+        </div>
+
+        <div class="gallery-tile reveal reveal-delay-1"
+             role="button" tabindex="0"
+             aria-label="Foto del sal&#243;n"
+             data-caption="Balayage a mano alzada / Freehand balayage">
+          <img src="assets/service_1.jpg"
+               alt="Resultado de balayage a mano alzada, Sala de Belleza Gloria"
+               loading="lazy" decoding="async" />
+          <div class="gallery-tile-overlay" aria-hidden="true"></div>
+        </div>
+
+        <div class="gallery-tile reveal reveal-delay-2"
+             role="button" tabindex="0"
+             aria-label="Foto del sal&#243;n"
+             data-caption="El equipo de Gloria Salon / The Gloria Salon team">
+          <img src="assets/staff_2.jpg"
+               alt="El equipo de Sala de Belleza Gloria en celebraci&#243;n navide&#241;a"
+               loading="lazy" decoding="async" />
+          <div class="gallery-tile-overlay" aria-hidden="true"></div>
+        </div>
+
+        <div class="gallery-tile reveal"
+             role="button" tabindex="0"
+             aria-label="Foto del sal&#243;n"
+             data-caption="Salon Gloria, Puerto Pe&#241;asco">
+          <img src="assets/video_thumb_1.jpg"
+               alt="Vista exterior de Salon Gloria, Puerto Pe&#241;asco"
+               loading="lazy" decoding="async" />
+          <div class="gallery-tile-overlay" aria-hidden="true"></div>
+        </div>
+
+        <div class="gallery-tile reveal reveal-delay-1"
+             role="button" tabindex="0"
+             aria-label="Foto del sal&#243;n"
+             data-caption="">
+          <img src="assets/client_1.jpg"
+               alt="Visita especial en Sala de Belleza Gloria"
+               loading="lazy" decoding="async" />
+          <div class="gallery-tile-overlay" aria-hidden="true"></div>
+        </div>
+
+      </div><!-- /.gallery-grid -->
+
+    </div>
+  </section>
+
+  <!-- ======================================================= -->
+  <!-- Lightbox                                                 -->
+  <!-- ======================================================= -->
+  <div id="lightbox" role="dialog" aria-modal="true" aria-label="Visor de foto" tabindex="-1">
+    <button class="lb-close" aria-label="Cerrar visor">&#215;</button>
+    <button class="lb-prev" aria-label="Foto anterior">&#8249;</button>
+    <img class="lb-img" src="" alt="" />
+    <button class="lb-next" aria-label="Foto siguiente">&#8250;</button>
+    <p class="lb-caption"></p>
+  </div>
+
+  <!-- ======================================================= -->
+  <!-- Resenas / Reviews                                        -->
+  <!-- ======================================================= -->
+  <section id="resenas" aria-labelledby="resenas-title">
+    <div class="section-inner section-pad resenas-inner">
+
+      <h2 class="section-title reveal" id="resenas-title"
+          data-es="Lo que dice la comunidad."
+          data-en="What the community says.">
+        Lo que dice la comunidad.
+      </h2>
+
+      <div class="review-stats reveal reveal-delay-1">
+        <div class="stat-pill">
+          <span class="review-stars" aria-label="4.5 estrellas">&#9733;&#9733;&#9733;&#9733;&#189;</span>
+          <span data-es=" Google (120 rese&#241;as)"
+                data-en=" Google (120 reviews)"> Google (120 rese&#241;as)</span>
+        </div>
+        <div class="stat-pill">
+          <span class="review-stars" aria-label="4.5 estrellas">&#9733;&#9733;&#9733;&#9733;&#189;</span>
+          <span data-es=" Facebook (28 rese&#241;as)"
+                data-en=" Facebook (28 reviews)"> Facebook (28 rese&#241;as)</span>
+        </div>
+      </div>
+
+      <div class="press-cards">
+
+        <div class="press-card reveal reveal-delay-1">
+          <p class="press-quote"
+             data-es="&#8220;Sala de Belleza Gloria, un pilar de Rocky Point desde 1969.&#8221;"
+             data-en="&#8220;Sala de Belleza Gloria, a Rocky Point staple since 1969.&#8221;">
+            &#8220;Sala de Belleza Gloria, un pilar de Rocky Point desde 1969.&#8221;
+          </p>
+          <p class="press-source">Rocky Point Times, 2014</p>
+        </div>
+
+        <div class="press-card reveal reveal-delay-2">
+          <p class="press-quote"
+             data-es="&#8220;Un grupo numeroso de estilistas de la localidad &#8211; la mayor&#237;a formadas por Gloria Sal&#243;n &#8211; reconocieron su trayectoria de 60 a&#241;os dedicada a la linda profesi&#243;n de la belleza.&#8221;"
+             data-en="&#8220;A large gathering of local stylists &#8211; most of them trained at Gloria Salon &#8211; came together to honor her 60-year career in the beautiful profession of beauty.&#8221;">
+            &#8220;Un grupo numeroso de estilistas de la localidad &#8211; la mayor&#237;a formadas por Gloria Sal&#243;n &#8211; reconocieron su trayectoria de 60 a&#241;os dedicada a la linda profesi&#243;n de la belleza.&#8221;
+          </p>
+          <p class="press-source">ALO Magazine, Marzo 2026</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================= -->
+  <!-- Contacto / Contact                                       -->
+  <!-- ======================================================= -->
+  <section id="contacto" aria-labelledby="contacto-title">
+    <div class="section-inner section-pad">
+
+      <div class="contact-grid">
+
+        <!-- Left: info + form -->
+        <div class="contact-left">
+          <h2 class="contact-title reveal" id="contacto-title"
+              data-es="Vis&#237;tenos"
+              data-en="Visit Us">Vis&#237;tenos</h2>
+
+          <div class="reveal reveal-delay-1">
+            <p class="contact-line">
+              <strong data-es="Tel&#233;fono" data-en="Phone">Tel&#233;fono</strong>
+              <a href="tel:6383835075" class="contact-phone-link">638 383 5075</a>
+              <a href="tel:6383838500" class="contact-phone-link">638 383 8500</a>
+            </p>
+
+            <p class="contact-line">
+              <strong data-es="Direcci&#243;n" data-en="Address">Direcci&#243;n</strong>
+              <span data-es="Av. Constituci&#243;n, entre Aldama y Ju&#225;rez, Centro, Puerto Pe&#241;asco, Sonora"
+                    data-en="Av. Constituci&#243;n, between Aldama and Ju&#225;rez, Centro, Puerto Pe&#241;asco, Sonora">
+                Av. Constituci&#243;n, entre Aldama y Ju&#225;rez, Centro, Puerto Pe&#241;asco, Sonora
+              </span>
+            </p>
+
+            <p class="contact-line">
+              <strong data-es="Horario" data-en="Hours">Horario</strong>
+              <span data-es="Lunes a s&#225;bado, 9:00 AM &#8211; 6:00 PM"
+                    data-en="Monday to Saturday, 9:00 AM &#8211; 6:00 PM">
+                Lunes a s&#225;bado, 9:00 AM &#8211; 6:00 PM
+              </span>
+              <span class="contact-hours-note"
+                    data-es="(Horario por confirmar)"
+                    data-en="(Hours subject to confirmation)">(Horario por confirmar)</span>
+            </p>
+
+            <p class="contact-walk-ins"
+               data-es="Atendemos con cita y sin cita previa."
+               data-en="Appointments and walk-ins welcome.">
+              Atendemos con cita y sin cita previa.
+            </p>
+
+            <div class="social-row">
+              <a href="https://www.facebook.com/saladebelleza.gloria" class="social-link"
+                 target="_blank" rel="noopener" aria-label="Facebook de Sala de Belleza Gloria">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                </svg>
+                <span>Facebook</span>
+              </a>
+              <a href="https://www.instagram.com/saladebellezagloriahn" class="social-link"
+                 target="_blank" rel="noopener" aria-label="Instagram de Sala de Belleza Gloria">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                </svg>
+                <span>Instagram</span>
+              </a>
+            </div>
+
+            <div class="contact-ctas">
+              <a href="tel:6383835075" class="btn-primary"
+                 data-es="Llamar: 638 383 5075"
+                 data-en="Call: 638 383 5075">Llamar: 638 383 5075</a>
+              <a href="https://www.google.com/maps/search/?api=1&query=Sala+de+Belleza+Gloria+Puerto+Pe%C3%B1asco+Sonora"
+                 class="btn-cobalt-ghost" target="_blank" rel="noopener"
+                 data-es="Ver en Google Maps"
+                 data-en="View on Google Maps">Ver en Google Maps</a>
+            </div>
+          </div>
+
+          <!-- Demo form -->
+          <div class="contact-form-wrap reveal reveal-delay-2" style="margin-top:2rem;">
+            <form class="contact-form" onsubmit="return false;" aria-label="Formulario de contacto">
+              <div class="form-field">
+                <label for="f-nombre"
+                       data-es="Nombre"
+                       data-en="Name">Nombre</label>
+                <input type="text" id="f-nombre" name="nombre"
+                       data-es-attr-placeholder="Su nombre"
+                       data-en-attr-placeholder="Your name"
+                       placeholder="Su nombre" autocomplete="name" />
+              </div>
+              <div class="form-field">
+                <label for="f-tel"
+                       data-es="Tel&#233;fono"
+                       data-en="Phone">Tel&#233;fono</label>
+                <input type="tel" id="f-tel" name="telefono"
+                       data-es-attr-placeholder="Su n&#250;mero"
+                       data-en-attr-placeholder="Your number"
+                       placeholder="Su n&#250;mero" autocomplete="tel" />
+              </div>
+              <div class="form-field">
+                <label for="f-servicio"
+                       data-es="Servicio de inter&#233;s"
+                       data-en="Service of interest">Servicio de inter&#233;s</label>
+                <select id="f-servicio" name="servicio">
+                  <option value="" data-es="Seleccione..." data-en="Select...">Seleccione...</option>
+                  <option value="cabello" data-es="Cabello" data-en="Hair">Cabello</option>
+                  <option value="belleza" data-es="U&#241;as / Faciales / Masajes" data-en="Nails / Facials / Massage">U&#241;as / Faciales / Masajes</option>
+                  <option value="evento" data-es="Evento especial" data-en="Special event">Evento especial</option>
+                  <option value="maquillaje" data-es="Maquillaje permanente" data-en="Permanent makeup">Maquillaje permanente</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="f-mensaje"
+                       data-es="Mensaje"
+                       data-en="Message">Mensaje</label>
+                <textarea id="f-mensaje" name="mensaje"
+                          data-es-attr-placeholder="Cu&#233;ntenos en qu&#233; podemos ayudarle..."
+                          data-en-attr-placeholder="Tell us how we can help..."
+                          placeholder="Cu&#233;ntenos en qu&#233; podemos ayudarle..."></textarea>
+              </div>
+              <button type="submit" class="btn-primary"
+                      data-es="Enviar"
+                      data-en="Send">Enviar</button>
+              <p class="form-note"
+                 data-es="Este formulario es una demostraci&#243;n &#8211; ll&#225;menos directamente al 638 383 5075."
+                 data-en="This form is a demo &#8211; call us directly at 638 383 5075.">
+                Este formulario es una demostraci&#243;n &#8211; ll&#225;menos directamente al 638 383 5075.
+              </p>
+            </form>
+          </div>
+        </div>
+
+        <!-- Right: map -->
+        <div class="contact-right reveal reveal-delay-1">
+          <iframe
+            class="contact-map contact-map-full"
+            title="Ubicaci&#243;n de Sala de Belleza Gloria, Puerto Pe&#241;asco"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3480.5!2d-113.5370!3d31.3040!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86a9250019f0c3d1%3A0xcbaf89a9996ba863!2sSala%20de%20Belleza%20Gloria!5e0!3m2!1ses!2smx!4v1"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+      </div><!-- /.contact-grid -->
+
+    </div>
+  </section>
+
+  <!-- ======================================================= -->
+  <!-- Footer                                                   -->
+  <!-- ======================================================= -->
+  <footer>
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <div class="footer-brand-name">GLORIA</div>
+        <p class="footer-brand-sub"
+           data-es="Sala de Belleza desde 1969"
+           data-en="Beauty Salon since 1969">Sala de Belleza desde 1969</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Navegaci&#243;n del pie de p&#225;gina">
+        <a href="#servicios" data-es="Servicios" data-en="Services">Servicios</a>
+        <a href="#gloria" data-es="Nosotros" data-en="About">Nosotros</a>
+        <a href="#galeria" data-es="Galer&#237;a" data-en="Gallery">Galer&#237;a</a>
+        <a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
+        <a href="tel:6383835075"
+           data-es="Llamar: 638 383 5075"
+           data-en="Call: 638 383 5075">Llamar: 638 383 5075</a>
+      </nav>
+
+      <div class="footer-school">
+        <strong>Instituto Profesional de Belleza Gloria</strong>
+        <span data-es="8 generaciones de estilistas graduados en Puerto Pe&#241;asco."
+              data-en="8 graduating cohorts of local stylists trained in Puerto Pe&#241;asco.">8 generaciones de estilistas graduados en Puerto Pe&#241;asco.</span>
+      </div>
+
+    </div>
+
+    <hr class="footer-rule" />
+
+    <div class="footer-bottom">
+      <span>&#169; Sala de Belleza Gloria, Puerto Pe&#241;asco, Sonora.</span>
+      <span data-es="Sitio de muestra elaborado por NeonFrame Web Design."
+            data-en="Spec site built by NeonFrame Web Design.">Sitio de muestra elaborado por NeonFrame Web Design.</span>
+    </div>
+  </footer>
+
+  <!-- ======================================================= -->
+  <!-- Scripts                                                  -->
+  <!-- ======================================================= -->
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
